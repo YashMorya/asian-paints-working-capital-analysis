@@ -1,0 +1,17 @@
+
+-- creating tables and required columns for further analysis
+
+
+CREATE table `asianpaints-financial-analysis.financial_analytics.asian_paints_quarterly`
+(
+  quarter_end DATE NOT NULL,
+  fiscal_year STRING NOT NULL,
+  fiscal_quarter STRING NOT NULL,
+  revenue NUMERIC,
+  cost_materials_consumed NUMERIC,
+  purchase_stock_in_trade NUMERIC,
+  inventory_change NUMERIC,
+  inventory NUMERIC,
+  trade_recievable NUMERIC,
+  trade_payables NUMERIC
+  )
