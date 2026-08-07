@@ -12,6 +12,6 @@ CREATE table `asianpaints-financial-analysis.financial_analytics.asian_paints_qu
   purchase_stock_in_trade NUMERIC,
   inventory_change NUMERIC,
   inventory NUMERIC,
-  trade_recievable NUMERIC,
+  trade_recievables NUMERIC,
   trade_payables NUMERIC
   )
