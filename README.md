@@ -1,5 +1,5 @@
 # Asian Paints — Cash Conversion Cycle (CCC) Analysis
-https://kommodo.ai/i/q8Ilf1mWtecqCrH373uj
+asian_paints-working-capital-analysis/power_bi/screenshot_of_dashboard.png
 ## The business question
 Birla Opus (Aditya Birla Group) entered India's decorative paints market
 aggressively starting FY2024-25, undercutting on price and pressuring Asian
