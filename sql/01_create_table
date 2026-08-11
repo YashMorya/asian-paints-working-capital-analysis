@@ -1,17 +1,33 @@
-
 -- creating tables and required columns for further analysis
 
 
-CREATE table `asianpaints-financial-analysis.financial_analytics.asian_paints_quarterly`
+CREATE table quarterly_financials
 (
-  quarter_end DATE NOT NULL,
-  fiscal_year STRING NOT NULL,
-  fiscal_quarter STRING NOT NULL,
-  revenue NUMERIC,
-  cost_materials_consumed NUMERIC,
-  purchase_stock_in_trade NUMERIC,
-  inventory_change NUMERIC,
-  inventory NUMERIC,
-  trade_recievables NUMERIC,
-  trade_payables NUMERIC
-  )
+  quarter_end DATE PRIMARY KEY,
+  fiscal_year VARCHAR NOT NULL,
+  fiscal_quarter VARCHAR NOT NULL CHECK( fiscal_quarter IN ('Q1', 'Q2', 'Q3','Q4')),
+  revenue FLOAT,
+  cost_materials_consumed FLOAT,
+  purchase_stock_in_trade FLOAT,
+  inventory_change FLOAT,
+  cogs_proxy FLOAT,
+  inventory FLOAT,
+  trade_recievables FLOAT,
+  trade_payables FLOAT
+ ;
+
+ CREATE TABLE half_yearly_financials
+ (fiscal_year VARCHAR ,
+ fiscal_half VARCHAR NOT NULL CHECK(fiscal_half IN ('H1', 'H2')),
+ balance_sheet_date DATE NOT NULL,
+ revenue FLOAT,
+ cost_materials_consumed FLOAT,
+ purchase_stock_in_trade FLOAT,
+ inventory_change FLOAT,
+ cogs_proxy FLOAT,
+ inventory FLOAT,
+ trade_recievables FLOAT,
+ trade_payables FLOAT,
+ PRIMARY KEY (fiscal_year, fiscal_half)
+ );
+
