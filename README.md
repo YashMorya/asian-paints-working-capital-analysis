@@ -1,5 +1,5 @@
 # Asian Paints — Cash Conversion Cycle (CCC) Analysis
-
+https://kommodo.ai/i/q8Ilf1mWtecqCrH373uj
 ## The business question
 Birla Opus (Aditya Birla Group) entered India's decorative paints market
 aggressively starting FY2024-25, undercutting on price and pressuring Asian
@@ -173,12 +173,3 @@ evidence, and knowing *why* it doesn't is the actual value of the analysis.
 - **FY23 H1 has no computable DIO/DSO/DPO/CCC** because there is no prior
   half-year in this dataset to average against — this is a structural
   boundary condition of the dataset, not a bug.
-
-## What's next
-1. Build a Power BI dashboard on top of this SQL output (trend line for CCC
-   across all 8 periods, with DIO/DSO/DPO as a breakdown, and the three
-   causal findings annotated at the relevant periods).
-2. Push this repository to GitHub with the SQL, CSVs, README, and the
-   accompanying research write-up.
-3. Move to the second planned project: comparing Zomato/Eternal vs Swiggy on
-   quick-commerce cash burn (Blinkit vs Instamart).
